@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import { Autoplay, Controller } from 'swiper/modules';
 import SlideCard from './SlideCard';

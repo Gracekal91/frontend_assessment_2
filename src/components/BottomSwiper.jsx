@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import { Autoplay, Controller } from 'swiper/modules';
@@ -7,7 +7,7 @@ import SmallCard from './SmallCard';
 SwiperCore.use([Autoplay, Controller]);
 
 export default function BottomSwiper({ slides, mySwiper, setMyBtmSwiper, onSlideTo }) {
-    const [myBottomSwiper, setMyBottomSwiper] = useState(null);
+
 
     return (
         <>
@@ -44,7 +44,6 @@ export default function BottomSwiper({ slides, mySwiper, setMyBtmSwiper, onSlide
                             item={slide}
                             index={index}
                             mySwiper={mySwiper}
-                            myBottomSwiper={myBottomSwiper}
                             onSlideTo={onSlideTo}
                         />
                     </SwiperSlide>
