@@ -1,0 +1,85 @@
+@import "components";
+
+body{
+  background: #000;
+  color: #fff;
+}
+
+.app-container{
+  width: 100%;
+  height: 90vh;
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+
+  .app-content{
+    width: 80%;
+    margin: 0 auto;
+    h1{
+      font-size: 25px;
+    }
+
+    .main-title{
+      text-align: center;
+      margin-bottom: 4rem;
+      font-size: 3rem;
+      transition: .5s ease-in;
+      @media screen and (max-width: 560px){
+        font-size: 2rem;
+        transition: .5s ease-in;
+      }
+    }
+  }
+}
+
+//Add styles for active items from both swiper
+.swiper-slide-active,
+.swiper-slide.active {
+  .mm-card-content{
+    color: rgba(135,123,77,1.0) !important;
+  }
+}
+
+.swiper-slide-active,
+.swiper-slide-next.active {
+  .slide-card-container {
+    color: rgba(135, 123, 77, 1.0) !important;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+
+  .button {
+    font-size: 1rem;
+    color: #fff;
+    background: rgba(135,123,77,1.0) !important;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+}
+
+.bottom-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-text{
+  font-size: 1.2rem;
+}
+
+
+
+
